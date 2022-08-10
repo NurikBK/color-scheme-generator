@@ -15,7 +15,6 @@ let schemeValue = '';
 
 schemeEl.addEventListener('change',(e) => {
   schemeValue = e.target.value
-  console.log(schemeValue);
 });
 
 generateBtn.addEventListener('click', function() {
