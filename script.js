@@ -1,5 +1,5 @@
 const colorInput = document.getElementById('input'),
-      shcemeEl = document.getElementById('scheme'),
+      schemeEl = document.getElementById('scheme'),
       generateBtn = document.getElementById('generate-btn'),
       colorsEl = document.querySelectorAll('#color'),
       hexEl = document.querySelectorAll('#hex');
@@ -13,7 +13,7 @@ colorInput.addEventListener('change', (e) => {
 
 let schemeValue = '';
 
-shcemeEl.addEventListener('change',(e) => {
+schemeEl.addEventListener('change',(e) => {
   schemeValue = e.target.value
   console.log(schemeValue);
 });
@@ -39,5 +39,11 @@ function getColorScheme(input, scheme) {
       })
   
 }
+
+hexEl.forEach(hex => hex.addEventListener('click', function(e){
+  navigator.clipboard.writeText(e.target.textContent)
+}))
+
+
 
 getColorScheme('000000', 'monochrome')
