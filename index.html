@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Color Scheme Generator</title>
+  </head>
+  <body>
+    <main>
+      <section id="activity">
+        <input id="input" type="color" />
+        <label for="scheme"></label>
+        <select name="scheme" id="scheme">
+          <option value="monochrome">Monochrome</option>
+          <option value="monochrome-dark">Monochrome-dark</option>
+          <option value="monochrome-light">Monochrome-light</option>
+          <option value="analogic">Analogic</option>
+          <option value="complement">Complement</option>
+          <option value="analogic-complement">Analogic-complement</option>
+          <option value="traid">Traid</option>
+        </select>
+        <button id="generate-btn">Get color scheme</button>
+      </section>
+      <section id="palette">
+        <div class="flex-container">
+          <div class="color" id="color"></div>
+          <p id="hex"></p>
+        </div>
+        <div class="flex-container">
+          <div class="color" id="color"></div>
+          <p id="hex"></p>
+        </div>
+        <div class="flex-container">
+          <div class="color" id="color"></div>
+          <p id="hex"></p>
+        </div>
+        <div class="flex-container">
+          <div class="color" id="color"></div>
+          <p id="hex"></p>
+        </div>
+        <div class="flex-container">
+          <div class="color" id="color"></div>
+          <p id="hex"></p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
