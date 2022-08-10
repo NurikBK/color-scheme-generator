@@ -1,7 +1,7 @@
 const colorInput = document.getElementById('input'),
       schemeEl = document.getElementById('scheme'),
       generateBtn = document.getElementById('generate-btn'),
-      colorsEl = document.querySelectorAll('#color'),
+      colorsEl = document.querySelectorAll('.color'),
       hexEl = document.querySelectorAll('#hex');
 
 
@@ -44,6 +44,10 @@ hexEl.forEach(hex => hex.addEventListener('click', function(e){
   navigator.clipboard.writeText(e.target.textContent)
 }))
 
+colorsEl.forEach(colorEl => colorEl.addEventListener('click', function(e){
+  const bgHex = window.getComputedStyle(colorEl)
+  navigator.clipboard.writeText(bgHex.getPropertyValue('background-color'))
+}))
 
 
 getColorScheme('000000', 'monochrome')
