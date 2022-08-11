@@ -2,7 +2,7 @@ const colorInput = document.getElementById('input'),
       schemeEl = document.getElementById('scheme'),
       generateBtn = document.getElementById('generate-btn'),
       colorsEl = document.querySelectorAll('.color'),
-      hexEl = document.querySelectorAll('#hex');
+      hexEl = document.querySelectorAll('.hex');
 
 
 let inputValue = '';

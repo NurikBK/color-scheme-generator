@@ -74,7 +74,7 @@ select {
   height: 550px;
 }
 
-#hex {
+.hex {
   border: 1px solid #374151;
   border-radius: 5px;
   cursor: pointer;
